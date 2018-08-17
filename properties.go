@@ -12,3 +12,13 @@ func FindPluginProperty(properties []pbp.PluginProperty, key string) string {
 	}
 	return ""
 }
+
+// TODO Naming...
+func FindPluginProperty2(properties []*pbp.PluginProperty, key string) string {
+	for _, prop := range properties {
+		if key == prop.Key {
+			return prop.GetValue()
+		}
+	}
+	return ""
+}
