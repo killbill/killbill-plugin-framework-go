@@ -2,6 +2,6 @@ package killbill
 
 import "github.com/gofrs/uuid"
 
-func randomUUID() string {
+func RandomUUID() string {
 	return uuid.Must(uuid.NewV4()).String()
 }
